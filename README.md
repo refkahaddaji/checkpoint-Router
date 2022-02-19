@@ -1,3 +1,5 @@
+<div class="checkpoint-instructions"><div class="title"><span>Instructions</span></div><div class="checkpoint-content"><ol><li>We will add a description and the trailer link (embed video link) to the object <strong>movie</strong>.</li><li>Every time I click on a movie card, it will take me to the movie description and trailer page.</li><li>In the description page, I can navigate back to the home page.</li></ol></div></div>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
