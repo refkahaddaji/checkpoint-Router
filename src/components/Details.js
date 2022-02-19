@@ -9,21 +9,22 @@ import { useState, useEffect } from 'react';
 
 const Details = (props) => {
     
-    const location = useLocation()
-    const { movie } = location.state
+    //const location = useLocation()
+    const movie  = props.movies.find(el=>el.id===props.match.params.id)
+
     return (
         <div style={{textAlign:"center"}}>
             <NavigationBar></NavigationBar>
             {/* {props.match.params.id} */}
-            <h1>  {props.location.state.movie.movie.title} </h1>
+            <h1>  </h1>
             <br/>
-            <iframe width="560" height="315" src={props.location.state.movie.movie.trailer} 
+            <iframe width="560" height="315" src={movie.trailer} 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 
             </iframe>
             <p>
-            {props.location.state.movie.movie.description} 
+            {movie.description} 
             </p>
         </div>
     )

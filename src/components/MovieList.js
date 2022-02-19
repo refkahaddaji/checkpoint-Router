@@ -27,13 +27,7 @@ const searchStarsValue= props.searchStarsValue;
 				return movie
 				} 				
 			}).map((movie, index) => (
-			<Link  to={{
-				pathname: `/details/${movie.id}`,
-				state: {
-					movie :{movie},
-				},
-			}}
-			>
+			<Link  to={`/details/${movie.id}`}>
 				<Movie movie={movie} />
 		</Link>
 	
